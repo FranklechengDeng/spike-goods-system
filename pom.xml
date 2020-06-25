@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.lcss</groupId>
-    <artifactId>spikegoodssystem</artifactId>
+    <artifactId>SpikeGoodsSystem</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>spikegoodssystem</name>
+    <name>SpikeGoodsSystem</name>
     <description>this system is used for spiking goods</description>
 
     <properties>
