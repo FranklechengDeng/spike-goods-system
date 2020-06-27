@@ -6,7 +6,6 @@ import lombok.*;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 
-import javax.persistence.Column;
 import java.io.Serializable;
 
 /**
@@ -22,19 +21,17 @@ import java.io.Serializable;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class ResponseOrderInformation implements Serializable {
 
-    private static final long serialVersionUID = -4617583903870052553L;
-    @Column
-    private String orderId;
-    @Column
+    private static final long serialVersionUID = -5188040397452719674L;
+
+    private String goodsId;
+
     private Integer goodsNumber;
-    @Column
-    private Integer goodsId;
-    @Column
-    private Integer perPrice;
-    @Column
-    private Integer totalPrice;
-    @Column
-    private String states;
+
+    private Integer goodsPrice;
+
+    private String description;
+
+    private String goodsName;
 
     @Override
     public String toString() {

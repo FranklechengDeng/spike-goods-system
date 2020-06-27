@@ -1,4 +1,4 @@
-package com.lcss.spikegoodssystem.Entity;
+package com.lcss.spikegoodssystem.entity;
 
 import lombok.Data;
 

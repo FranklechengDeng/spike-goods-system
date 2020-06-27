@@ -1,6 +1,6 @@
-package com.lcss.spikegoodssystem.Entity;
+package com.lcss.spikegoodssystem.entity;
 
-import lombok.Data;
+import lombok.*;
 
 import javax.persistence.*;
 
@@ -13,21 +13,21 @@ import javax.persistence.*;
 @Entity
 @Table( name = "goods")
 @Data
-public class Order {
+@AllArgsConstructor
+@NoArgsConstructor
+public class Goods {
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
     @Column (name = "id", length = 20)
     private Long id;
     @Column
-    private String orderId;
+    private String goodsId;
     @Column
     private Integer goodsNumber;
     @Column
-    private Integer goodsId;
+    private Integer goodsPrice;
     @Column
-    private Integer perPrice;
+    private String description;
     @Column
-    private Integer totalPrice;
-    @Column
-    private String states;
+    private String goodsName;
 }
